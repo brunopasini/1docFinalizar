@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Após digitar à mensagem, ele responde e arquiva o protocolo/memorando automaticamente
 // @author       Bruno Pasini
-// @match        *://cacador.1doc.com.br/?pg=doc/ver&hash=*
+// @match        *https://cacador.1doc.com.br/?pg=doc/ver&hash*
 // @grant        none
 // ==/UserScript==
 
