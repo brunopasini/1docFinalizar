@@ -85,7 +85,8 @@
                 { id: 'finalizarButton1', texto: 'Segue justificativa.', label: 'Justificativa' },
                 { id: 'finalizarButton2', texto: 'Segue justificativa e solicitação.', label: 'Justificativa e Solicitação' },
                 { id: 'finalizarButton3', texto: 'Segue solicitação, inclusão em banco de horas.', label: 'Inclusão BH' },
-                { id: 'finalizarButton4', texto: 'Justificativa lançada.', label: 'Justificativa Lançada' }
+                { id: 'finalizarButton4', texto: 'Justificativa lançada.', label: 'Justificativa Lançada' },
+                { id: 'responderButton', texto: '', label: 'Responder' } // Botão adicional "Responder"
             ];
 
             botoes.forEach(botao => {
@@ -118,12 +119,14 @@
                     button.addEventListener('click', () => {
                         const confirmed = confirm(`Deseja enviar a mensagem: "${botao.texto}"?`);
                         if (confirmed) {
-                            inserirJustificativa(botao.texto);
+                            if (botao.texto) {
+                                inserirJustificativa(botao.texto);
+                            }
                             triggerResponderButton();
                         } else {
                             console.log('Ação cancelada pelo usuário.');
                             // Clica automaticamente no botão "Cancelar" da confirmação de responder
-                            const cancelButton = document.querySelector('#');
+                            const cancelButton = document.querySelector('a#nao.btn.cancelar');
                             if (cancelButton) {
                                 cancelButton.click();
                             }
