@@ -123,7 +123,7 @@
                         } else {
                             console.log('Ação cancelada pelo usuário.');
                             // Clica automaticamente no botão "Cancelar" da confirmação de responder
-                            const cancelButton = document.querySelector('a#nao.btn.cancelar');
+                            const cancelButton = document.querySelector('#');
                             if (cancelButton) {
                                 cancelButton.click();
                             }
