@@ -79,7 +79,7 @@
     // Função para adicionar os botões à página
     function adicionarBotoes() {
         // Substitua pelo seletor da div onde deseja inserir os botões
-        const targetDiv = document.querySelector('div#mceu_36-body.mce-container-body.mce-flow-layout');
+        const targetDiv = document.querySelector('div#mceu_35-body.mce-container-body.mce-flow-layout');
         if (targetDiv) {
             const botoes = [
                 { id: 'finalizarButton1', texto: 'Segue justificativa.', label: 'Justificativa' },
